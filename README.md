@@ -14,8 +14,10 @@
   <a href="#game-vision"><img src="https://img.shields.io/badge/Repository%20Type-Main%20Unity%20Project-important.svg?style=for-the-badge&logo=github&colorA=363a4f&colorB=f5a97f" alt="Repository Type"></a>
   <a href="#my-philosophy"><img src="https://img.shields.io/badge/My%20Philosophy-Passion%20Project-purple.svg?style=for-the-badge&logo=gitbook&colorA=363a4f&colorB=b7bdf8" alt="My Philosophy"></a>
   <a href="#join-the-journey"><img src="https://img.shields.io/badge/Solo%20Dev-Collaboration%20Welcome-green.svg?style=for-the-badge&logo=github&colorA=363a4f&colorB=b7bdf8" alt="Solo Dev"></a>
-  <a href="#installation-guide"><img src="https://img.shields.io/badge/License-MIT-brightgreen.svg?style=for-the-badge&logo=github&colorA=363a4f&colorB=b7bdf8" alt="License: MIT"></a>
+  <a href="#installation-guide"><img src="https://img.shields.io/badge/License-CC%20BY--NC%204.0-blue.svg?style=for-the-badge&logo=creativecommons&colorA=363a4f&colorB=8dccff" alt="License: CC BY-NC 4.0"></a>
 </p>
+
+---
 
 ## 🚀 Welcome to the Project!
 
@@ -139,7 +141,7 @@ I want to make sure your setup process is as smooth as possible. Please make sur
 
 1.  **Clone the Repository:** Open your terminal or Git Bash and clone the repository with this command:
     ```bash
-    git clone [https://github.com/your-username/fragments-of-aetherion.git](https://github.com/your-username/fragments-of-aetherion.git)
+    git clone [https://github.com/JonatanKovalik/fragments-of-aetherion.git](https://github.com/JonatanKovalik/fragments-of-aetherion.git)
     ```
 2.  **Pull LFS Files:** After cloning, make sure you pull all the large files. This is a common step people forget!
     ```bash
