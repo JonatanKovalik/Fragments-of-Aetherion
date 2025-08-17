@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  ✨ **Fragments of Aetherion** ✨
+  ✨ <b>Fragments of Aetherion</b> ✨
 </p>
 <p align="center">
   A solo journey into a shattered world, brought to life by a single developer's vision in Unity 6.
