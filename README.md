@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/JonatanKovalik/Fragments-of-Aetherion/main/your-logo-file-name.jpg" alt="Fragments of Aetherion Logo Banner">
+  <img src="https://raw.githubusercontent.com/JonatanKovalik/Fragments-of-Aetherion/main/aetherion-banner.jpg" alt="Fragments of Aetherion Logo Banner">
 </p>
 
 <p align="center">
