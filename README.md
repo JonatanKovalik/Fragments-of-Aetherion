@@ -73,6 +73,10 @@ Please follow these guidelines to keep our asset library organized and clean.
 * **Textures:** `.PNG` (for PBR maps like Albedo, Normal, Roughness, Metalness)
 * **Animations:** `.FBX`
 
+### Asset Attribution
+
+* **3D Models:** The main menu Sentinel model was generated using AI tools, specifically Tripo Studio.
+
 ---
 
 ## ⚔️ Combat & Progression System
