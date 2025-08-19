@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using static UnityEngine.ParticleSystem;
 
 public class EndOfLoading : MonoBehaviour
@@ -9,6 +10,7 @@ public class EndOfLoading : MonoBehaviour
     public GameObject cube;
     public AudioSource AudioSource;
     public AudioSource AudioSourceNeon;
+    public Text loadinganimationtext;
     private void Start()
     {
         cube.GetComponent<Transform>().localScale = new Vector3(0,0,0);
@@ -55,6 +57,7 @@ public class EndOfLoading : MonoBehaviour
     }
     private IEnumerator cubeanimation()
     {
+        loadinganimationtext.enabled = false;
         float duration = 1.0f;
         float elapsedTime = 0f;
         Vector3 startScale = new Vector3(0, 0, 0);
