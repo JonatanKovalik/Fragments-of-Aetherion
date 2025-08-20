@@ -7,8 +7,16 @@ public class StartMainMenuScene : MonoBehaviour
     public AudioSource AudioSource;
     public GameObject cube;
     public GameObject NeonText;
+    public GameObject NeonButton1;
+    public GameObject NeonButton2;
+    public GameObject NeonButton3;
+    public GameObject NeonButton4;
     private void Start()
     {
+        NeonButton1.SetActive(false);
+        NeonButton2.SetActive(false);
+        NeonButton3.SetActive(false);
+        NeonButton4.SetActive(false);
         NeonText.SetActive(true);
         NeonText.GetComponent<Transform>().position = new Vector3(-1.889697f, 1.079377f, -8.114098f);
         NeonText.GetComponent<Transform>().localScale = new Vector3(0.4f, 0.4f, 0.4f);
@@ -65,6 +73,10 @@ public class StartMainMenuScene : MonoBehaviour
         }
         NeonText.GetComponent<Transform>().position = endPosition;
         Debug.Log("Neon text position animation completed.");
+        NeonButton1.SetActive(true);
+        NeonButton2.SetActive(true);
+        NeonButton3.SetActive(true);
+        NeonButton4.SetActive(true);
     }
     private IEnumerator NeonTextRotationAnimation()
     {
