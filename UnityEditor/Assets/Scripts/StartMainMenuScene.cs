@@ -1,7 +1,6 @@
 using System.Collections;
 using UnityEngine;
 
-
 public class StartMainMenuScene : MonoBehaviour
 {
     public AudioSource AudioSource;
@@ -11,8 +10,10 @@ public class StartMainMenuScene : MonoBehaviour
     public GameObject NeonButton2;
     public GameObject NeonButton3;
     public GameObject NeonButton4;
+    public GameObject canvas;
     private void Start()
     {
+        canvas.SetActive(false);
         NeonButton1.SetActive(false);
         NeonButton2.SetActive(false);
         NeonButton3.SetActive(false);
@@ -48,7 +49,7 @@ public class StartMainMenuScene : MonoBehaviour
     {
         float duration = 2.3f;
         float elapsedTime = 0f;
-        Vector3 startScale = new Vector3(0.4f, 0.4f, 0.4f);
+        Vector3 startScale = new Vector3(0.3f, 0.3f, 0.3f);
         Vector3 endScale = new Vector3(1.4f, 1.4f, 1.4f);
         while (elapsedTime < duration)
         {
@@ -63,8 +64,8 @@ public class StartMainMenuScene : MonoBehaviour
     {
         float duration = 2.3f;
         float elapsedTime = 0f;
-        Vector3 startPosition = new Vector3(-1.889697f, 1.079377f, -8.114098f);
-        Vector3 endPosition = new Vector3(-9.21f, 3.45f, -1.01f);
+        Vector3 startPosition = new Vector3(-1.460905f, 1.081117f, -8.102829f);
+        Vector3 endPosition = new Vector3(-9.186638f, 4.379216f, -1.733518f);
         while (elapsedTime < duration)
         {
             NeonText.GetComponent<Transform>().position = Vector3.Lerp(startPosition, endPosition, elapsedTime / duration);
@@ -73,6 +74,7 @@ public class StartMainMenuScene : MonoBehaviour
         }
         NeonText.GetComponent<Transform>().position = endPosition;
         Debug.Log("Neon text position animation completed.");
+        canvas.SetActive(true);
         NeonButton1.SetActive(true);
         NeonButton2.SetActive(true);
         NeonButton3.SetActive(true);
@@ -82,8 +84,8 @@ public class StartMainMenuScene : MonoBehaviour
     {
         float duration = 2.3f;
         float elapsedTime = 0f;
-        Quaternion startRotation = Quaternion.Euler(5.553f, 181.049f, 0);
-        Quaternion endRotation = Quaternion.Euler(13.902f, 178.353f, 0.006f);
+        Quaternion startRotation = Quaternion.Euler(8.963f, 181.049f, 0);
+        Quaternion endRotation = Quaternion.Euler(14.637f, 174.278f, -1.183f);
         while (elapsedTime < duration)
         {
             NeonText.GetComponent<Transform>().rotation = Quaternion.Lerp(startRotation, endRotation, elapsedTime / duration);
