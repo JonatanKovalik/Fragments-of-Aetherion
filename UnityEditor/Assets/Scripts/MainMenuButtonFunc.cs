@@ -13,10 +13,12 @@ public class MainMenuButtonFunc : MonoBehaviour
     public Button QuitButton;
     public GameObject canvas;
     public static bool LoadGameButtonClicked;
+    public static bool SettingsAnimationend;
     public static string ButtonName;
     public Camera Camera;
     private void Start()
     {
+        SettingsAnimationend = false;
         Camera.GetComponent<Transform>().position = new Vector3(0, 1, -9.3f);
         ButtonName = "";
         LoadGameButtonClicked = false;
@@ -96,6 +98,7 @@ public class MainMenuButtonFunc : MonoBehaviour
         }
         Camera.GetComponent<Transform>().position = endPosition;
         Debug.Log("Camera position animation completed.");
+        SettingsAnimationend = true;
     }
     private IEnumerator CameraAnimationPositon()
     {
