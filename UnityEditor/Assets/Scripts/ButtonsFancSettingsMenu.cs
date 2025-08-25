@@ -15,6 +15,7 @@ public class ButtonsFancSettingsMenu : MonoBehaviour
     private bool stopdirectorplay;
     public Camera maincamera;
     public GameObject canvassettings;
+    public GameObject MainPanel;
     public GameObject maincanvas;
     public void GraphicsButtonClicked()
     {
@@ -54,26 +55,19 @@ public class ButtonsFancSettingsMenu : MonoBehaviour
         Panels[1].SetActive(false);
         Panels[2].SetActive(false);
         Panels[3].SetActive(false);
-        director.Play();
-        director.time = director.duration / 2.0;
-        director.playableGraph.GetRootPlayable(0).SetSpeed(-1);
-
+        MainPanel.SetActive(false);
         isPlaying = false;
         panelanimation.SetActive(false);
         StartCoroutine(animationend());
     }
     private IEnumerator animationend()
     {
-        mainpanelanimation.time = director.duration / 2.0;
         if (!stopdirectorplay)
         {
-            yield return new WaitForSeconds(2.43f);
+            //yield return new WaitForSeconds(2.43f);
             stopdirectorplay = true;
         }
         Panels[4].SetActive(false);
-        mainpanelanimation.Play();
-        mainpanelanimation.playableGraph.GetRootPlayable(0).SetSpeed(-1);
-
         yield return new WaitForSeconds(4.24f);
         canvassettings.SetActive(false);
         StartCoroutine(SettingsCameraAnimationReturn());
@@ -139,5 +133,6 @@ public class ButtonsFancSettingsMenu : MonoBehaviour
         isPlaying = false;
         panelanimation.SetActive(false);
         stopdirectorplay = true;
+        MainPanel.SetActive(false);
     }
 }

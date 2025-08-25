@@ -15,6 +15,7 @@ public class MainMenuButtonFunc : MonoBehaviour
     public static bool LoadGameButtonClicked;
     public static bool SettingsAnimationend;
     public static string ButtonName;
+    public GameObject MainPanel;
     public Camera Camera;
     private void Start()
     {
@@ -83,6 +84,7 @@ public class MainMenuButtonFunc : MonoBehaviour
         }
         Camera.GetComponent<Transform>().position = endPosition;
         Debug.Log("Camera position animation completed.");
+        PanelAnimationQuit.HasQuitAnimationEnded = true;
     }
     private IEnumerator SettingsCameraAnimation()
     {
@@ -99,6 +101,7 @@ public class MainMenuButtonFunc : MonoBehaviour
         Camera.GetComponent<Transform>().position = endPosition;
         Debug.Log("Camera position animation completed.");
         SettingsAnimationend = true;
+        MainPanel.SetActive(true);
     }
     private IEnumerator CameraAnimationPositon()
     {
